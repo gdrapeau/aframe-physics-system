@@ -6,9 +6,9 @@ var CANNON = {}, // GD we just want ammo, also thre-tocannon.es reloads three, r
     C_MAT = CONSTANTS.CONTACT_MATERIAL;
 
 const { TYPE } = require('./constants');
-var LocalDriver = require('./drivers/local-driver'),
-    WorkerDriver = require('./drivers/worker-driver'),
-    NetworkDriver = require('./drivers/network-driver'),
+var LocalDriver = {}, // GD no canon, require('./drivers/local-driver'),
+    WorkerDriver = {}, // GD no canon, require('./drivers/worker-driver'),
+    NetworkDriver = {}, // GD no ??? require('./drivers/network-driver'),
     AmmoDriver = require('./drivers/ammo-driver');
 require('aframe-stats-panel')
 
