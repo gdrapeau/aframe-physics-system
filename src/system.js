@@ -1,5 +1,5 @@
 /* global THREE */
-var CANNON = require('cannon-es'),
+var CANNON = null, // GD we just want ammo, also thre-tocannon.es reloads three, require('cannon-es'),
     CONSTANTS = require('./constants'),
     C_GRAV = CONSTANTS.GRAVITY,
     C_MAT = CONSTANTS.CONTACT_MATERIAL;
