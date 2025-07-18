@@ -43,7 +43,7 @@ module.exports = AFRAME.registerSystem('physics', {
     debug:                          { default: false },
 
     // If using ammo, set the default rendering mode for debug
-    debugDrawMode: { default: THREE.AmmoDebugConstants.NoDebug },
+    debugDrawMode: { default: 0 }, //GD not compiling, just a guess was: THREE.AmmoDebugConstants.NoDebug },
     // If using ammo, set the max number of steps per frame 
     maxSubSteps: { default: 4 },
     // If using ammo, set the framerate of the simulation
