@@ -48,7 +48,7 @@ AmmoDriver.prototype.init = function(worldConfig) {
         this.solver,
         this.collisionConfiguration
       );
-      this.physicsWorld.setForceUpdateAllAabbs(false);
+      //this.physicsWorld.setForceUpdateAllAabbs(false); //GD not in ammo.js 0.0.2
       this.physicsWorld.setGravity(
         new Ammo.btVector3(0, worldConfig.hasOwnProperty("gravity") ? worldConfig.gravity : -9.8, 0)
       );
